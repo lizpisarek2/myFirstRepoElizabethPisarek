@@ -1,0 +1,37 @@
+   /*
+   * Class: 44-241 Computer Programming II
+   * Author: Elizabeth Pisarek
+   * Description: Ex3(do-while loop)
+   * Due: 2/03/2017
+   * I pledge that I have completed the programming assignment independently.
+   I have not copied the code from a student or any source.
+   I have not given my code to any other student.
+   I have not given my code to any other student and will not share this code
+   with anyone under any circumstances.
+   */
+
+package ex3;
+
+
+public class Ex3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int limit = 500;
+        double pi = 0.0;
+        double num = 1.0;
+        
+        //Calculating the accurate approximation of Pi(π)
+        do {
+            pi += (1/num - 1/num + 2);
+            num += 4;
+            limit --;
+        } while (limit <= 0);
+        
+        //Printing PI(π)
+        System.out.println("Pi in Netbeans Java is " + Math.PI); 
+    }
+
+}
